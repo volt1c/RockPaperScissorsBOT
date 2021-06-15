@@ -1,0 +1,30 @@
+{
+  "name": "rock-paper-scissors-bot",
+  "version": "1.0.0",
+  "description": "This is rock paper scissors discord bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agil-Dev/RockPaperScissorsBOT.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord-bot",
+    "game",
+    "rock-paper-scissors"
+  ],
+  "author": "Kamil Pawlaczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Agil-Dev/RockPaperScissorsBOT/issues"
+  },
+  "homepage": "https://github.com/Agil-Dev/RockPaperScissorsBOT#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
