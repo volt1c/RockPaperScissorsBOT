@@ -2,7 +2,6 @@ const bot = require('./bot')
 
 require('dotenv').config()
 
-
 console.info('[✅]> Bot enebled...')
 
 if (process.env.TOKEN == undefined) {

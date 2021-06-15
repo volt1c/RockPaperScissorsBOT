@@ -4,9 +4,10 @@ const client = new discord.Client()
 client.prefix = '-'
 client.commands = new Map()
 
-require('fs').readdirSync('./src/commands')
-  .filter(file => file.endsWith('.js'))
-  .forEach(file => {
+require('fs')
+  .readdirSync('./src/commands')
+  .filter((file) => file.endsWith('.js'))
+  .forEach((file) => {
     const command = require(`./commands/${file}`)
     client.commands.set(command.name, command)
   })
@@ -22,7 +23,7 @@ client.on('message', (message) => {
   const command = args.shift().toLowerCase()
 
   if (content === prefix) {
-    channel.send('**Yes, it\'s my prefix...**')
+    channel.send("**Yes, it's my prefix...**")
   }
 
   if (!commands.has(command)) return
