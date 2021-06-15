@@ -2,8 +2,9 @@
   "name": "rock-paper-scissors-bot",
   "version": "1.0.0",
   "description": "This is rock paper scissors discord bot.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon -q src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
