@@ -17,6 +17,11 @@ if (process.env.PREFIX != undefined) bot.prefix = process.env.PREFIX
 
 console.info(`Default prefix is '${bot.prefix}'.`)
 
-bot.login(process.env.TOKEN)
-
-console.info('Connected to Discord...')
+bot
+  .login(process.env.TOKEN)
+  .then(() => {
+    console.info('Connected to Discord...')
+  })
+  .catch(() => {
+    console.error('Can not connect to Discord...')
+  })
