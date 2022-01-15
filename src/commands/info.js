@@ -20,7 +20,7 @@ module.exports = {
           },
           {
             name: '[ 🌐 ] Github :',
-            value: 'https://github.com/Agil-Dev',
+            value: 'https://github.com/volt1c',
             inline: false,
           }
         )
