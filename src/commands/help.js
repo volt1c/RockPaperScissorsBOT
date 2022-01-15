@@ -1,9 +1,7 @@
-const { prefix } = require('../bot')
-
 module.exports = {
   name: 'help',
   description: 'Help.',
-  async execute({ message, discord }) {
+  execute({ message, discord, prefix }) {
     message.channel.send(
       new discord.MessageEmbed()
         .setColor('#5cffe9')
