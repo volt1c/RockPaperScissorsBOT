@@ -7,7 +7,7 @@ console.info('Bot enebled...')
 
 if (process.env.TOKEN == undefined) {
   console.error(`Token is undefined!`)
-  return
+  process.exit()
 }
 
 if (process.env.PREFIX == undefined)
